@@ -81,8 +81,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 24px;
-  width: 35px;
+  height: 20px;
+  width: 25px;
   cursor: pointer;
 }
 
@@ -102,6 +102,7 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  /* border: 1px solid gainsboro; */
 }
 
 .menu-links a {
@@ -121,6 +122,8 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
+  box-shadow: 1px 2px 2px 2px gainsboro;
+  border-radius: 20%;
 }
 
 .hamburger-icon.open span:first-child {
@@ -163,7 +166,7 @@ section {
   display: flex;
 }
 
-/* PROFILE SECTION */
+/*---------------------------- PROFILE SECTION ---------------------------*/
 
 #profile {
   background-color: whitesmoke;
@@ -274,12 +277,11 @@ section {
   gap: 1rem;
 }
 
-/* ABOUT SECTION */
+/*-------------------------------- ABOUT SECTION ---------------------------*/
 
 #about {
   position: relative;
   padding: 30px;
-  /* background-color: #a1c879; */
   border: 1px dotted black;
 }
 
@@ -329,14 +331,20 @@ section {
   width: 400px;
   margin: auto 0;
 }
-
-/* SKILL SECTION */
-
-#skills {
+/*-------------------------- EXPERIENCE SECTION --------------------*/
+#experience {
   position: relative;
   background-color: whitesmoke;
   padding: 30px;
   box-shadow: 2px 3px gainsboro;
+}
+
+/*-------------------------- SKILL SECTION --------------------*/
+
+#skills {
+  position: relative;
+  border: 1px dotted black;
+  padding: 30px;
 }
 
 .skill-sub-title {
@@ -375,13 +383,13 @@ article .icon {
   cursor: default;
 }
 
-/* PROJECTS SECTION */
+/*---------------------- PROJECTS SECTION --------------------*/
 
 #projects {
   position: relative;
   padding: 30px;
-  /* background-color: #a1c879; */
-  border: 1px dotted black;
+  background-color: whitesmoke;
+  box-shadow: 2px 3px gainsboro;
 }
 
 .color-container {
@@ -405,15 +413,14 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* CONTACT */
+/*------------------------ CONTACT ---------------------*/
 
 #contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 70vh;
-  background-color: whitesmoke;
-  box-shadow: 2px 3px gainsboro;
+  border: 1px dotted black;
 }
 
 .contact-info-upper-container {
@@ -447,11 +454,15 @@ article .icon {
   height: 2.5rem;
 }
 
-/* FOOTER SECTION */
+/*------------------- FOOTER SECTION ---------------*/
 
 footer {
+  /* padding: 30px; */
+  background-color: whitesmoke;
+  box-shadow: 2px 3px gainsboro;
   height: 26vh;
-  margin: 0 1rem;
+  margin: 0;
+  border-radius: 20% 20% 0 0;
 }
 
 footer p {

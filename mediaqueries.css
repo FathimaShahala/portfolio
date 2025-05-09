@@ -51,7 +51,7 @@
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: 30vh;
   }
   #profile {
     height: 63vh;
@@ -68,6 +68,9 @@
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
+  }
+  #contact .contact-info-upper-container {
+    display: inline;
   }
   .contact-info-container {
     margin: 0;
